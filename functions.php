@@ -1,7 +1,7 @@
 <?php
 /*
 Author: John Sio
-URL: htp://themble.com/bones/
+URL: http://www.acrossuhub.com
 
 This is where you can drop your custom functions or
 just edit things like thumbnail sizes, header images,
