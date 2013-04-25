@@ -1,0 +1,748 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 1140px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+	background-color:$background-grey;
+	margin-bottom: 1em;
+}
+
+.top-header-bar {
+	background-color:$background-black;
+}
+
+#top-bar-nav {
+	margin:0;
+	
+	ul { list-style-type: none; }
+
+	li { display: inline-block; }
+
+	a {
+		color:#CCC;
+		display: block;
+		padding: 0.313em 0.750em;
+
+
+	}
+	a:hover { background: $background-grey; color:#000;  }
+	&.left { float:left; }
+	&.right { float:right; }
+	
+}
+
+.logo { 
+	float:left;
+	width:auto;
+	position:relative;
+	height:150px;
+	img {
+		margin-top: 1em;
+		min-height: 126px; 
+	}
+	
+	h1 {
+		margin: 1em 0 1em 0;
+	}
+}
+
+nav.header-top-right-nav {
+	float:right;
+	clear:right;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-right: 0;
+	margin-left: 0;
+
+	a {
+		background-color: $background-grey;
+	}
+
+	.drop { 
+		right:0;
+	}
+
+}
+
+nav.main-right-nav {
+	float:right;
+	.drop {
+		right:0;
+	}
+}
+
+#main-menu-half-left {
+	float:left;
+	clear:left;
+	width:60%;
+}
+
+#main-menu-half-right {
+	float:right;
+	clear:right;
+	width:35%;
+}
+
+
+#header-search {
+	float:right;
+	clear:right;
+}
+
+/*********************
+CONTENT STYLES
+*********************/
+
+
+#content {
+	
+}
+
+/*********************
+HOMEPAGE SLIDER/ACCORDION STYLES
+*********************/
+
+.section-wrapper {
+	overflow: auto;
+	margin-bottom:1.0em;
+
+}
+
+.flex-container {
+	width: 65.74585634900001% + 2.762430939%; /* same as the eightcol + left Margin in Grid.scss */
+	float:left;
+	clear:left;
+	position:relative;
+	overflow:hidden;
+
+}
+
+#homepage-accordion {
+	float:left;
+	margin-left:0;
+	position:relative;
+	height:414px;
+
+	h3 {
+		font-weight:bold;
+		padding: 1em .5em;
+		@include background-image(linear-gradient( #c1eafd, #4dc2fb));
+	}
+	div.ui-accordion-content {
+		padding: 0.8em;
+	}
+
+}
+
+/*********************
+HOMEPAGE MIDDLE STYLES
+*********************/
+
+
+
+.middle-section-wrapper {
+	clear:both;
+	margin-bottom:2em;
+
+	.middle-left-large, .middle-right-small {
+		float:left;
+		h2 {
+			margin-bottom:0.5em;
+			padding-top:0.4em;
+		}
+	}
+
+	.middle-left-large {
+		
+		
+	}
+	.middle-right-small {
+		/*margin-left:0;*/
+
+	} 
+	
+	div.event_box_layout_wrapper {
+		float:left;
+
+		div.single_event_image {
+			img {
+				width:100px;
+				height:100px;
+			}
+		}
+
+		div.single_event_box_header {
+			.single_event_box_title {
+				width:auto;
+			}
+		}
+
+		div.single_event_box_time {
+			/*
+			width:0;
+			height:0;
+			overflow:hidden;
+			*/
+		}
+
+		div.single_event_box_desc {
+			float:left;
+			width:261px;
+			height:87px;
+			overflow:hidden;
+		}
+		
+		div.single_event_box_submit {
+			height:0;
+			width:0;
+			overflow:hidden;
+			
+		}
+		
+		div.single_event_box {
+			display:inline-block;
+			float:left;
+			width:48%;
+			background-color:#f8fbfe;
+			margin-bottom: 0.8em;
+			margin-right: 0.8em;
+			border:0;
+			@include single-box-shadow($link-hover-blue-light);
+
+			&:hover {
+				background-color:$link-hover-blue-light;
+				@include box-shadow(rgba($link-hover-colour, 0.4) 0 0 25px, rgba($background-grey, 0.2) 0 0 3px 1px inset);
+			}
+
+			h2 {
+				font-size:1.5em;
+			}
+		}
+
+		div.date_icon {
+			
+		}
+	}
+
+}
+
+/*********************
+HOMEPAGE BOTTOM STYLES
+*********************/
+
+.bottom-section-wrapper {
+	float:left;
+	margin-bottom:2em;
+	width: 100%;
+	
+	.bottom-left, .bottom-centre, .bottom-right {
+		/*width: 33%;*/
+		/*float:left;*/
+		h2 {
+			margin-bottom:0.5em;
+			padding-top:0.4em;
+		}
+	}
+
+	.bottom-left {
+
+	}
+	.bottom-centre {
+
+	} 
+	.bottom-right {
+
+	}
+}
+
+
+
+/*********************
+SHOW CATEGORY SHORTCODE STYLES
+*********************/
+
+.announcement_post_single_box {
+	background-color:$background-grey;
+}
+
+/*********************
+PROGRAM PAGE STYLES
+*********************/
+
+.pp_tabs {
+	
+	.sidebar {
+		position: relative;
+		float:left;
+		width: 100%;
+	}
+	
+	li {
+		padding:0.1em 0;
+		border-bottom: 2px solid rgba( 1, 0, 0, 0.2);
+		
+	}
+	
+	li a {
+		padding:0.5em 1em;
+		
+	}
+		
+	li a:link, li a:visited {
+		display: block;
+
+	}
+		
+	li a:hover {
+		
+	}
+		
+	li a:active {
+
+	}
+	
+}
+
+.pp_content {
+	position:relative;
+	float:left;
+	
+}
+
+/*********************
+EVENTS MANAGER PLUGIN STYLES
+*********************/
+.event_box_layout_wrapper {
+
+	div.single_event_box_desc {
+
+
+	}
+}
+
+
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.mega {
+	border: 0;
+	margin-top: 0.5em;
+	
+	.setcol2 {
+		div.drop {
+			width:362px;
+		}
+	}
+	.setcol3 {
+		div.drop{
+			width:543px;
+		}
+	}
+	.setcol4{
+		div.drop{
+			width:724px;
+		}
+	}
+	.setcol5{
+		div.drop{
+			width:905px;
+		}
+	}
+	
+	li {
+		float: left;
+		position: relative;
+		
+		&:hover a {
+			background-color: $link-hover-colour;
+			color: $white;
+			font-weight:bold;
+		}
+		
+		div.drop {
+			display: none;
+			margin-top: 0;
+			border: 1px solid #ccc;
+			position: absolute;
+			z-index: 8999;
+			background-color:$white;
+			overflow:auto;
+			width:181px;
+			
+			.depth1 {
+				a {
+					 
+				}
+			}
+			
+			ul.mega_list {
+				position: relative;
+				float: left;
+				display: inline-block;
+				
+				
+				li {
+					width:180px;
+					
+					a {
+						background-color: $white;
+						color: $link-hover-colour;
+						font-weight:normal;
+	
+						padding-left: 10px;
+						border-right: 0;
+						display: block;
+						width: 100%;
+	
+						&:hover,
+						&:focus {
+							background-color: $link-hover-colour;
+							color: $white;
+							font-weight:bold;
+						}
+	
+						&:link {}
+					}
+	
+					&:first-child {}
+	
+					&:last-child {
+	
+						a {
+							border-bottom: 0;
+						}
+					}
+	
+					/*
+					if you need to go deeper, go nuts
+					just remember deeper menus suck
+					for usability. k, bai.
+					*/
+					ul {}
+				}
+	
+				/* highlight sub-menu current page */
+				li.current-menu-item,
+				li.current_page_item,
+				li.current-page-ancestor {
+					a {}
+				}
+			}
+		}
+		
+		
+
+		/* showing sub-menus */
+		&:hover div {
+			top: auto;
+			display: inline-block;
+		}
+	} /* end of li */
+}
+
+.nav {	
+	border: 0;
+	margin-top: 0.500em;
+	
+	li {
+		float: left;
+		position: relative;
+
+		&:hover a {
+			background-color: $link-hover-colour;
+			color: $white;
+			font-weight:bold;
+		}
+
+		a {
+			border-bottom: 0;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				
+
+			}
+		}
+
+		&:first-child { }
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border: 1px solid #ccc;
+
+			position: absolute;
+			display: none;
+			z-index: 8999;
+
+			li {
+
+				a {
+					background-color: $white;
+					color: $link-hover-colour;
+					font-weight:normal;
+
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 180px;
+
+					&:hover,
+					&:focus {
+						background-color: $link-hover-colour;
+						color: $white;
+						font-weight:bold;
+					}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover ul {
+			top: auto;
+			display: block;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	margin-top: 1.5em;
+}
+
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+	}
+
+	.widget {
+		/*padding: 0 10px;*/
+		margin: 1.2em 0;
+		
+		ul {
+			li { 
+				/*parent*/
+				border:0;
+				&:first-child {}
+				&:last-child {}
+				a { padding:0.5em 1em; }
+				/* deep nesting */
+				
+				&:hover {
+					/*@include box-shadow(rgba($link-hover-colour, 0.4) 0 0 25px, rgba($background-grey, 0.2) 0 0 3px 1px inset);*/
+				}
+				
+				ul {
+					padding-left: 1em;
+					border-top: 2px solid rgba( 1, 0, 0, 0.2);
+					li {
+						padding:0.1em 0;
+						border-bottom: 2px solid rgba( 1, 0, 0, 0.2);
+						
+						&:hover {
+							/*@include box-shadow(rgba($link-hover-colour, 0.4) 0 0 25px, rgba($background-grey, 0.2) 0 0 3px 1px inset);*/
+						}					
+					}
+
+				}
+			}
+		}
+		
+		
+	}
+
+
+	/* links widget */
+	.widget_links {}
+	.widget_links ul {}
+	.widget_links ul li {}
+	.widget_links ul li a {}
+
+	/* meta widget */
+	.widget_meta {}
+	.widget_meta ul {}
+	.widget_meta ul li {}
+	.widget_meta ul li a {}
+
+	/* pages widget */
+	.widget_pages {}
+	.widget_pages ul {}
+	.widget_pages ul li {}
+	.widget_pages ul li a {}
+
+	/* recent-posts widget */
+	.widget_recent_entries {}
+	.widget_recent_entries ul {}
+	.widget_recent_entries ul li {}
+	.widget_recent_entries ul li a {}
+
+	/* archives widget */
+	.widget_archive {}
+	.widget_archive ul {}
+	.widget_archive ul li {}
+	.widget_archive ul li a {}
+	.widget_archive select {}
+	.widget_archive option {}
+
+	/* tag-cloud widget */
+	.widget_links {}
+	.widget_links li:after {}
+	.widget_links li:before {}
+	.widget_tag_cloud {}
+	.widget_tag_cloud a {}
+	.widget_tag_cloud a:after {}
+	.widget_tag_cloud a:before {}
+
+	/* calendar widget */
+	.widget_calendar {}
+	#calendar_wrap {}
+	#calendar_wrap th {}
+	#calendar_wrap td {}
+	#wp-calendar tr td {}
+	#wp-calendar caption {}
+	#wp-calendar a {}
+	#wp-calendar #today {}
+	#wp-calendar #prev {}
+	#wp-calendar #next {}
+	#wp-calendar #next a {}
+	#wp-calendar #prev a {}
+
+	/* category widget */
+	.widget_categories {}
+	.widget_categories ul {}
+	.widget_categories ul li {}
+	.widget_categories ul ul.children {}
+	.widget_categories a {}
+	.widget_categories select{}
+	.widget_categories select#cat {}
+	.widget_categories select.postform {}
+	.widget_categories option {}
+	.widget_categories .level-0 {}
+	.widget_categories .level-1 {}
+	.widget_categories .level-2 {}
+	.widget_categories .level-3 {}
+
+	/* recent-comments widget */
+	.recentcomments {}
+	#recentcomments {}
+	#recentcomments li {}
+	#recentcomments li a {}
+	.widget_recent_comments {}
+
+	/* search widget */
+	#searchform {}
+	.widget_search {}
+	.screen-reader-text {}
+
+	/* text widget */
+	.textwidget {}
+	.widget_text {}
+	.textwidget p {}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+#footer {
+
+}
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
+

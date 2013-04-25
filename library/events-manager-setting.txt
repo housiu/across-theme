@@ -1,0 +1,23 @@
+<div class="event_box_layout_wrapper twelvecol first clearfix">
+
+	<div class="single_event_box clearfix">
+		<div class="single_event_box_header">
+			<div class="date_icon"><p><span>#M</span>#j</p></div>
+			<div class="single_event_box_title"><h2>#_EVENTNAME</h2></div>
+			<div class="single_event_box_time">
+				#_EVENTTIMES - {has_location} <i>#_LOCATIONNAME, #_LOCATIONTOWN #_LOCATIONSTATE</i> {/has_location}
+			</div>
+		</div>
+		
+		<div class="single_event_box_desc">
+			<div class="single_event_image">#_EVENTIMAGE</div>
+			<p>#_EVENTEXCERPT</p>		
+		</div>
+		
+		<div class="single_event_box_submit">
+			<a href="#_EVENTURL">Read More</a>
+			{has_sku}[add_to_cart sku="#_ATT{sku}"]{/has_sku}
+		</div>
+	</div>
+		
+</div> <!-- end of event_box_layou_wrapper -->
